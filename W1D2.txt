@@ -1,0 +1,17 @@
+<?xml version="1.0">
+<students>
+	<student id="000-61-0001" name="Ana"/>
+	<student id="000-61-0002" name="Bob"/>
+	<student id="000-61-0003" name="Cathy"/>
+</students>
+
+XML Schema (XSD) a.k.a DTD
+Well-formed: Syntaticaly correct (otherwise parser would throw parsing error)
+Self closing elements: <img src="something" />, <br />
+Valid - validation should be confirmed
+
+
+CDN - content delivery network server
+
+
+
