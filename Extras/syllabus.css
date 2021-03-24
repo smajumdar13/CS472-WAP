@@ -22,29 +22,20 @@ td {
 }
 
 #a {
-  width: 10%;
+  width: 9%;
 }
 #b {
-  width: 8%;
+  width: 7%;
 }
-#c {
-  max-width: 10%;
-}
-#d {
-  width: 15%;
-}
-#e {
-  width: 15%;
-}
-#f {
-  width: 15%;
-}
-#g {
-  width: 60;
-}
+#c,
+#d,
+#e,
+#f,
+#g,
 #h {
-  width: 15%;
+  width: 14%;
 }
+
 .fir1 {
   background-color: burlywood;
 }

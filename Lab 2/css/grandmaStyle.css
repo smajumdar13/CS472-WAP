@@ -7,18 +7,26 @@ body {
 
 h1,
 h3 {
-  font-family: "arial";
+  font-family: "Arial";
   font-weight: 300;
 
-  color: #a4a44b;
+  color: #a4a400;
   text-decoration: underline;
   background-color: #f0f0f0;
 }
+
+pre {
+  font-family: "Times New Roman";
+  font-size: 18px;
+  color: #404040;
+}
+
 hr {
   height: 2px;
   color: rgb(214, 210, 210);
   background-color: rgb(214, 210, 210);
 }
+
 h1 {
   text-align: center;
 }
@@ -28,8 +36,29 @@ h3 {
 span {
   text-decoration: underline;
 }
-.commentsList {
+#cake {
+  text-decoration: line-through;
+}
+
+.ylobg {
+  margin-left: 2em;
+  margin-right: 2em;
   background-color: #ffffa8;
   font-style: italic;
   color: #404040;
+}
+a:link {
+  color: #a4a400;
+}
+a:hover {
+  color: #4974b4;
+}
+a:active {
+  color: #10c910;
+}
+a:visited {
+  color: #626e62;
+}
+footer {
+  text-align: right;
 }
