@@ -1,0 +1,50 @@
+body {
+  text-align: center;
+  font-family: "Times New Roman";
+  font-size: 18px;
+}
+
+h3 {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+table {
+  width: 80%;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+#a {
+  width: 10%;
+}
+#b {
+  width: 8%;
+}
+#c {
+  max-width: 10%;
+}
+#d {
+  width: 15%;
+}
+#e {
+  width: 15%;
+}
+#f {
+  width: 15%;
+}
+#g {
+  width: 60;
+}
+#h {
+  width: 15%;
+}
+.fir1 {
+  background-color: burlywood;
+}

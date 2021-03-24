@@ -1,0 +1,65 @@
+body {
+  background-color: rgb(51, 51, 51);
+  color: rgb(113, 179, 240);
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6em;
+  margin: 5%;
+}
+
+h1 {
+  color: rgb(212, 93, 18);
+  font-weight: Bold;
+}
+
+.container {
+  width: 100%;
+  margin: 10px, 15px, 10px, 15px;
+  /* margin: top right bottom left -> margin: 5px 10px 5px 10px*/
+}
+
+.container h2 {
+  font-family: "Times New Roman";
+  color: rgb(125, 128, 201);
+  font-weight: 400;
+  text-transform: capitalize;
+  word-spacing: 0.2em;
+  border: 2px dashed gray;
+  border-radius: 15px;
+  padding-left: 10px;
+}
+
+.box {
+  font-family: "Lucida Sans";
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  word-spacing: 0.5em;
+  background-color: rgb(53, 44, 44);
+
+  border: 5px rgb(236, 169, 22) solid;
+  padding: 10px;
+}
+
+#first {
+  font-style: italic;
+  color: rgb(218, 196, 196);
+}
+a {
+  text-decoration: none;
+  color: coral;
+}
+a:hover {
+  color: rgb(149, 236, 141);
+}
+a:active {
+  color: rgb(241, 211, 144);
+}
+
+a:link{
+  color:rgb(212, 93, 18)
+}
+a:visited{
+  color: darkmagenta);
+}
