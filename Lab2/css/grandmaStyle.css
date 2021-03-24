@@ -56,9 +56,9 @@ a:hover {
 a:active {
   color: #10c910;
 }
-a:visited {
+/* a:visited {
   color: #626e62;
-}
+} */
 footer {
   text-align: right;
 }
