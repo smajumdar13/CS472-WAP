@@ -32,10 +32,10 @@ dt {
 li {
   font-size: 16px;
 }
-.menu-bar ol dl {
+.menu ol dl {
   display: none;
 }
-.menu-bar li:hover > dl {
+.menu li:hover > dl {
   display: block;
 }
 p {
