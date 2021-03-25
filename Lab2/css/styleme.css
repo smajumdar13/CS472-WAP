@@ -32,9 +32,14 @@ dt {
 li {
   font-size: 16px;
 }
+.reverseList {
+  display: flex;
+  flex-direction: column-reverse;
+}
 .menu ol dl {
   display: none;
 }
+
 .menu li:hover > dl {
   display: block;
 }
