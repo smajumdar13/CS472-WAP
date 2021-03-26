@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form creation</title>
+  </head>
+  <body>
+    <form method="GET" action="http://www.google.com/search">
+      <div>
+        <!-- Let's search Google <input name="q" />
+        <input type="submit" value="Search" /> -->
+        <label for="txtSearchWord">Search Google</label>
+        <input
+          id="txtSearchWord"
+          name="q"
+          placeholder="Input your keyword(s)"
+          title="only words"
+        />
+        <br />
+        <label for="txaEssay">Enter essay</label>
+        <textarea
+          id="txaEssay"
+          name="essay"
+          placeholder="Enter the essay here"
+        ></textarea>
+        <button>Submit Search</button>
+        <br />
+        <label for="ddlFilter">Select filter</label>
+        <select name="filter" id="ddlFilter">
+          <option value="id">ID</option>
+          <option selected value="firstname">First name</option>
+        </select>
+        <input type="checkbox" name="chk" checked /> HTML
+        <input type="checkbox" name="chk" /> CSS
+        <input type="checkbox" name="chk" /> JavaScript
+
+        <select name="favchar" disabled size="2">
+          <option>Jerry</option>
+          <option>Roger</option>
+          <option selected>Bull</option>
+        </select>
+        <fieldset>
+          <input type="date" />
+          <legend>Credit cards:</legend>
+          <input type="radio" name="cc" value="visa" checked /> Visa
+          <input type="radio" name="cc" value="mastercard" /> Mastercard
+          <input type="radio" name="cc" value="amex" /> AMEX
+        </fieldset>
+        <input type="reset" />
+        <input type="submit" />
+      </div>
+    </form>
+  </body>
+</html>
