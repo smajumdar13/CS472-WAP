@@ -3,6 +3,8 @@ body {
   font-family: "Segoe UI";
   color: rgb(36, 33, 33);
   font-size: 18px;
+  padding-left: 5em;
+  padding-right: 5em;
 }
 
 h1 {
@@ -16,12 +18,14 @@ h1 {
 h2 {
   color: rgb(53, 53, 70);
 }
+img {
+  vertical-align: middle;
+}
 #intro {
   text-align: center;
 }
 #intro::first-letter {
-  initial-letter: 4;
-  -webkit-initial-letter: 4;
+  font-size: 1.5em;
 }
 span {
   font-weight: bold;
@@ -51,7 +55,11 @@ p {
 dl {
   font-size: 14px;
 }
-
+.rounded {
+  border: 3px;
+  /* border-radius: 50%; */
+  border-color: black;
+}
 #footer {
   text-align: center;
   font-family: "Helvetica Neue";

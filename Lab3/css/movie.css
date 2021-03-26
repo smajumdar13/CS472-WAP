@@ -1,0 +1,93 @@
+body {
+  background: url("../images/background.png") repeat;
+  font-size: 8pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+.mainBanner {
+  background: url("../images/bannerbg.png") repeat-x;
+  text-align: center;
+}
+.mainBanner + h1 {
+  font-size: 24pt;
+  font-family: Tahoma, Verdana, sans-serif;
+  text-align: center;
+  text-shadow: 3px 3px #999999;
+}
+.main-content {
+  width: 800px;
+  margin: auto;
+  border-radius: 20px;
+  border: gray solid 4px;
+  overflow: auto;
+}
+#overview {
+  width: 250px;
+  float: right;
+  background-color: #a2b964;
+}
+#ratingReview {
+  width: 550px;
+  margin-right: 250px;
+}
+.rottenBanner {
+  background: url("../images/rbg.png") repeat-x;
+  font-size: 48pt;
+  font-weight: bold;
+  color: red;
+  display: flex;
+  align-items: center;
+}
+.reviews {
+  flex-wrap: wrap;
+  display: flex;
+  column-gap: 2%;
+  margin: 0;
+  padding: 2%;
+}
+.reviews div {
+  width: 49%;
+  box-sizing: border-box;
+}
+.reviews img {
+  float: left;
+  margin: 5px;
+}
+.reviews p:nth-child(odd) {
+  border: grey solid 2px;
+  padding: 8pt;
+  background-color: #e8dc9b;
+  border-radius: 10px;
+}
+.reviews p {
+  overflow: auto;
+}
+#overview > dl {
+  padding: 10pt 10pt 0 10pt;
+  font-size: 8pt;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#overview dt {
+  font-weight: bold;
+}
+#overview dd {
+  margin-bottom: 10pt;
+}
+dd ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.paging {
+  clear: right;
+  background-color: #a2b964;
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+}
+.validator {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 88px;
+  opacity: 50%;
+}
