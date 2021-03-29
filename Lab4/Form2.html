@@ -50,14 +50,15 @@
 
         <div class="column">
           <label for="Product">Quantity in stock</label><br />
-          <input type="text" pattern="[a-zA-Z0-9]+" required />
+          <input type="text" pattern="[0-9]+" required />
           <br />
           <br />
           <label for="Name">Supplier</label><br />
           <input type="text" pattern="[a-zA-Z0-9]+" required /><br />
           <br />
           <label for="Date Supplied">Date Supplied</label><br />
-          <input type="text" pattern="[0-9]+\.[0-9]{2}" required /><br />
+          <input type="text" placeholder="yyyy-mm-dd"
+          pattern="[0-9]{4}\-[0-9]{2}\-[0-9]{2}" / >
           <h5>Enter a valid date.</h5>
           <br />
         </div>

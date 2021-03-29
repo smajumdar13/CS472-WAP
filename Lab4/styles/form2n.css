@@ -74,7 +74,7 @@ a:hover {
   padding-left: 4vw;
 } */
 input[type="text"],
-input[type="password"] {
+input[type="password"] input[type="date"] {
   width: 95%;
   height: 30px;
   border: 2px solid gray;
@@ -127,7 +127,7 @@ h5 {
   padding-left: 70%;
 }
 #reset {
-  width: 110px;
+  width: fit-content;
   height: 50px;
   border: 2px solid rgb(29, 123, 185);
   border-radius: 7px;
@@ -138,7 +138,7 @@ h5 {
   color: rgb(29, 123, 185);
 }
 #cancel {
-  width: 110px;
+  width: fit-content;
   height: 50px;
   border: 2px solid rgb(241, 129, 55);
   border-radius: 7px;
@@ -150,7 +150,7 @@ h5 {
   margin: 1vw;
 }
 #add {
-  width: 110px;
+  width: fit-content;
   height: 50px;
   border: 2px solid rgb(74, 172, 211);
   border-radius: 7px;
