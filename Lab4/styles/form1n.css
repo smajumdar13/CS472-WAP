@@ -3,7 +3,7 @@ body {
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 24px;
 }
-input[type="email"],
+input[type="text"],
 input[type="password"] {
   width: 95%;
   height: 30px;

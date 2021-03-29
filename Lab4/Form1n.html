@@ -11,8 +11,7 @@
     <form method="POST" accept-charset="utf-8">
       <label for="email">Email address</label><br />
       <input
-        type="email"
-        name="email"
+        type="text"
         pattern="[a-z0-9._+\-
       ]+@[a-z0-9.\-]+\.[a-z]{2,3}"
         placeholder="Enter email"
@@ -31,7 +30,17 @@
       /><br />
       <br />
       <input type="checkbox" id="checkbox" required />
-      <label for="checkbox">Check me out</label><br /><br />
+      <label for="checkbox">Check me out</label>
+      <br />
+      <br />
+      <label for="Website">Website</label><br />
+      <input
+        type="text"
+        pattern="http(s)?:\/\/[a-zA-Z0-9\\\-_\.]{1,}\.[a-z]{2,4}"
+        placeholder="Website address"
+        required
+      /><br />
+      <br />
       <input type="submit" />
     </form>
   </body>
