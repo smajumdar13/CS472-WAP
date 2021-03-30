@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./styles/form1n.css" rel="stylesheet" type="text/css" />
+    <script defer src="scripts/form1.js" type="text/javascript"></script>
     <title>Form 1</title>
   </head>
   <body>
-    <form method="POST" accept-charset="utf-8">
+    <form method="GET" action="#" onsubmit="printForm()" accept-charset="utf-8">
       <label for="email">Email address</label><br />
       <input
         type="text"
+        id="email"
         pattern="[a-z0-9._+\-
       ]+@[a-z0-9.\-]+\.[a-z]{2,3}"
         placeholder="Enter email"
@@ -24,6 +26,7 @@
       <label for="Password">Password</label><br />
       <input
         type="password"
+        id="password"
         pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}"
         placeholder="Password"
         required
@@ -36,12 +39,14 @@
       <label for="Website">Website</label><br />
       <input
         type="text"
+        id="website"
         pattern="http(s)?:\/\/[a-zA-Z0-9\\\-_\.]{1,}\.[a-z]{2,4}"
         placeholder="Website address"
         required
       /><br />
       <br />
       <input type="submit" />
+      <!-- <button>Submit</button> -->
     </form>
   </body>
 </html>
