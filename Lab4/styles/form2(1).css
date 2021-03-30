@@ -1,0 +1,38 @@
+body {
+  padding: 3vw;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+}
+#signout {
+  background-color: rgb(43, 120, 207);
+  font-size: 24px;
+  color: white;
+  border: 10px solid rgb(43, 120, 207);
+  border-radius: 5px;
+  size: 32px;
+}
+.left {
+  float: left;
+  margin-bottom: 0;
+  background-color: gray;
+  overflow: visible;
+}
+.right {
+  float: right;
+  margin-bottom: 0;
+}
+.heading {
+  /* background-image: linear-gradient(
+    rgb(63, 114, 226),
+    rgb(36, 91, 209),
+    rgb(63, 114, 226)
+  ); */
+  color: blue;
+  clear: both;
+  margin: 0;
+  padding: 0;
+  background-color: aqua;
+}
+.links {
+  text-decoration: none;
+}
