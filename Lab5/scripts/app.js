@@ -198,3 +198,23 @@ function printFibo(n, a, b) {
 console.log("Fibonacci sequence from given numbers: " + printFibo(10, 0, 1));
 document.write("Fibonacci sequence from given numbers: " + printFibo(10, 0, 1));
 document.write("<br />");
+document.write("<br />");
+
+// 15 ticking clock
+function tickingClock() {
+  let today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  h = checkTime(h);
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById("clock").innerHTML = h + ":" + m + ":" + s;
+  let t = setTimeout(tickingClock, 500);
+}
+function checkTime(i) {
+  if (i < 10) {
+    i = "0" + i;
+  }
+  return i;
+}
