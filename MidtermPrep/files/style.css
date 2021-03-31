@@ -1,0 +1,41 @@
+body {
+  font-size: 1.5vw;
+}
+form {
+  padding-left: 12vw;
+  padding-right: 12vw;
+}
+h2 {
+  font-size: 2vw;
+  color: white;
+  background-color: rgb(29, 29, 29);
+  width: 100%;
+
+  padding: 0.5vw;
+  vertical-align: middle;
+}
+.header-right {
+  display: float;
+}
+
+label {
+  font-size: 1.5vw;
+}
+select {
+  width: 18.5vw;
+  height: 2.4vw;
+}
+input[type="text"] {
+  width: 18vw;
+}
+table,
+th,
+td {
+  width: 100%;
+  border: 1px solid black;
+  text-align: left;
+  border-collapse: collapse;
+}
+th {
+  background-color: gray;
+}

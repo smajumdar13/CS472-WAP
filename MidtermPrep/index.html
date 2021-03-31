@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="files/style.css" type="text/css" rel="stylesheet" />
+    <script defer src="files/app1.js" type="text/javascript"></script>
+    <title>Midterm Prep</title>
+  </head>
+  <body>
+    <div class="header">
+      <h2>CS472 ::: MiniBanking App</h2>
+    </div>
+    <div class="header right"></div>
+    <br />
+    <form id="newAccount" action="#" method="GET" onsubmit="addAcct()">
+      <label>Account No</label>
+      <br />
+      <input
+        type="text"
+        id="acc"
+        placeholder="01-XXX-XXXX"
+        pattern="01-\d{3}-\d{4}"
+        required
+      />
+      <p>Your unique account number.</p>
+      <label>Customer Name</label>
+      <br />
+      <input
+        type="text"
+        id="cust"
+        placeholder="e.g. John B. Smith"
+        pattern="[A-Za-z\s]+"
+        required
+      />
+      <br />
+      <br />
+      <label>Type of Account</label>
+      <br />
+      <!-- <input list="acct" id="acctype" required />
+      <datalist id="acct"> -->
+      <select id="typee" required>
+        <option value="Checking">Checking</option>
+        <option value="Savings">Savings</option>
+        <option value="Loan">Loan</option>
+      </select>
+      <!-- </datalist> -->
+      <br />
+      <br />
+      <input type="submit" id="btn" value="Create New Account" />
+      <!-- <button id="btn" onclick="addAcct()">Create New Account</button> -->
+      <!-- <input type="submit" id="create" value="Create New Account" /> -->
+      <br />
+      <br />
+      <table id="acct">
+        <tr>
+          <th>List of Customer Accounts</th>
+        </tr>
+        <tr border="1px solid black">
+          <td>01-000-0000 | Sample | Savings</td>
+        </tr>
+      </table>
+    </form>
+    <!-- <script src="files/app1.js" type="text/javascript"></script> -->
+  </body>
+</html>

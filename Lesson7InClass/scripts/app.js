@@ -66,3 +66,8 @@ function f() {
 h = 4;
 console.log(h);
 // h = 4;
+
+// ternary operation
+const r = 1 < 2 ? 1 : 2;
+
+

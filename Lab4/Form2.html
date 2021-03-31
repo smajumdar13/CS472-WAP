@@ -29,12 +29,7 @@
     </div>
     <h2>New Product Form</h2>
 
-    <form
-      method="GET"
-      action="popup.html"
-      onsubmit="getPreview()"
-      accept-charset="utf-8"
-    >
+    <form method="GET" onsubmit="getPreview()" accept-charset="utf-8">
       <div class="row">
         <div class="column">
           <label for="Product">Product Number</label><br />
@@ -42,7 +37,12 @@
           <br />
           <br />
           <label for="Name">Name</label><br />
-          <input type="text" id="name" pattern="[a-zA-Z0-9]+" required /><br />
+          <input
+            type="text"
+            id="name"
+            pattern="[a-zA-Z0-9\s]+"
+            required
+          /><br />
           <br />
           <label for="Unit Price">Unit Price</label><br />
           <input
@@ -65,7 +65,7 @@
           />
           <br />
           <br />
-          <label for="Name">Supplier</label><br />
+          <label for="supp">Supplier</label><br />
           <input
             list="supplier"
             placeholder="Select a Supplier"
@@ -91,7 +91,8 @@
         <input type="reset" value="Reset" id="reset" />
         <input type="reset" value="Cancel" id="cancel" />
         <!-- <input type="submit" value="Add Product" id="add" /> -->
-        <input type="submit" value="Add Product" id="add" return true;" />
+        <input type="submit" formtarget="_blank" value="Add Product" id="add"
+        return true;" />
       </div>
     </form>
   </body>
