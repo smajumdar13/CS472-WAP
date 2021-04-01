@@ -45,33 +45,3 @@ function callAlert1() {
 //       text2.style.fontWeight = "";
 //     }
 //   }
-
-function isVowel(n) {
-  let r = false;
-  switch (n.toLowerCase()) {
-    case "a":
-    case "e":
-    case "i":
-    case "o":
-    case "u":
-      r = true;
-      break;
-  }
-  return r;
-}
-
-function piglatin() {
-  
-  var list = document.getElementsByClassName("platin").value;
-  let temp1 = "";
-  let temp2 = "";
-    for (let j = 0; j < list.length; j++) {
-      if (isVowel(list[i].charAt(j)) === false) {
-        temp1 += list[i].charAt(j);
-      } else {
-        temp2 += list[i].charAt(j);
-      }
-      return temp2 + temp1 + "ay";
-    }
-  }
-}
