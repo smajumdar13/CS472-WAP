@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)http://mumstudents.org/cs472/2016-03-AS-KL/Labs/6/decoratemytext.html -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+    <title>Text Decorator</title>
+    <link
+      href="./Text Decorator_files/decoratemytext.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+
+    <!--
+		This is a widely-used JavaScript library named jQuery that has
+		many useful functions which we need.
+		Please don't remove this link or change its URL; leave it as-is!
+		-->
+    <script
+      src="./Text Decorator_files/jquery.min.js.download"
+      type="text/javascript"
+    ></script>
+    <script data-dapp-detection="">
+      !(function () {
+        let e = !1;
+        function n() {
+          if (!e) {
+            const n = document.createElement("meta");
+            (n.name = "dapp-detected"), document.head.appendChild(n), (e = !0);
+          }
+        }
+        if (window.hasOwnProperty("ethereum")) {
+          if (
+            ((window.__disableDappDetectionInsertion = !0),
+            void 0 === window.ethereum)
+          )
+            return;
+          n();
+        } else {
+          var t = window.ethereum;
+          Object.defineProperty(window, "ethereum", {
+            configurable: !0,
+            enumerable: !1,
+            set: function (e) {
+              window.__disableDappDetectionInsertion || n(), (t = e);
+            },
+            get: function () {
+              if (!window.__disableDappDetectionInsertion) {
+                const e = arguments.callee;
+                (e &&
+                  e.caller &&
+                  e.caller.toString &&
+                  -1 !== e.caller.toString().indexOf("getOwnPropertyNames")) ||
+                  n();
+              }
+              return t;
+            },
+          });
+        }
+      })();
+    </script>
+
+    <!-- link to your script file here -->
+    <script
+      defer
+      src="./Text Decorator_files/decoratemytext.js"
+      type="text/javascript"
+    ></script>
+  </head>
+
+  <body>
+    <h1 class="platin">Text Decorator</h1>
+
+    <div>
+      <img src="./Text Decorator_files/decorated.gif" alt="very decorated!" />
+    </div>
+
+    <!-- Your UI controls go here -->
+    <fieldset>
+      <legend class="platin">Text</legend>
+      <textarea id="textbox" rows="4" cols="30" class="platin">
+		Sample Item 1 
+		Sample Item 2 </textarea
+      >
+    </fieldset>
+    <fieldset>
+      <legend class="platin">Decoration</legend>
+      <input
+        type="button"
+        id="btn"
+        onclick="resizer()"
+        value="Bigger Decorations!"
+        class="platin"
+      />
+      <input
+        type="button"
+        id="btn"
+        onclick="piglatin()"
+        value="Igpay Atinlay"
+      />
+      <br />
+      <input type="checkbox" id="check" value="Bling" onchange="callAlert1()" />
+      <span class="platin">Bling</span>
+    </fieldset>
+  </body>
+</html>
