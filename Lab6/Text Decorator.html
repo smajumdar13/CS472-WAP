@@ -68,7 +68,7 @@
   </head>
 
   <body>
-    <h1>Text Decorator</h1>
+    <h1><span id="firstHead" class="strings">Text Decorator</span></h1>
 
     <div>
       <img src="./Text Decorator_files/decorated.gif" alt="very decorated!" />
@@ -76,30 +76,37 @@
 
     <!-- Your UI controls go here -->
     <fieldset>
-      <legend>Text</legend>
-      <textarea id="textbox" rows="4" cols="30" class="platin">
+      <legend><span id="legend1">Text</span></legend>
+      <textarea id="textbox" class="strings" rows="4" cols="30">
 		Sample Item 1 
-		Sample Item 2 </textarea
+		Sample Item 2</textarea
       >
     </fieldset>
     <fieldset>
-      <legend>Decoration</legend>
+      <legend><span id="legend2">Decoration</span></legend>
       <input
         type="button"
         id="btn"
         onclick="resizer()"
         value="Bigger Decorations!"
-        class="platin"
+        class="strings"
       />
-      <!-- <input
+      <input
         type="button"
-        id="btn"
-        onclick="piglatin()"
+        id="btn1"
+        onclick="textConvert()"
         value="Igpay Atinlay"
-      /> -->
+      />
+      <input type="button" id="malko" onclick="malko()" value="Malkovich" />
       <br />
-      <input type="checkbox" id="check" value="Bling" onchange="callAlert1()" />
-      Bling
+      <input
+        type="checkbox"
+        id="check"
+        value="Bling"
+        class="strings"
+        onchange="callAlert1()"
+      />
+      <span id="bling">Bling</span>
     </fieldset>
   </body>
 </html>
