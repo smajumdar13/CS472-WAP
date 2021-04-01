@@ -1,4 +1,5 @@
 /** scripts for Lab 6 - Decorate My Text */
+"use strict";
 
 function callAlert() {
   //   alert("Hello, world!");
