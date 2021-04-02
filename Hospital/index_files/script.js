@@ -12,6 +12,7 @@ function Register(event) {
   //   var outp2 = document.getElementById("rbt2");
 
   var row1 = table1.insertRow(-1);
+  row1.className = "childrow";
   var cell1 = row1.insertCell(0);
   var cell2 = row1.insertCell(1);
   var cell3 = row1.insertCell(2);
@@ -19,6 +20,7 @@ function Register(event) {
   var cell5 = row1.insertCell(4);
   var cell6 = row1.insertCell(5);
   var cell7 = row1.insertCell(6);
+  cell7.className = "childdata";
 
   var outp = "";
   if (document.getElementById("rbt1").checked) {
@@ -37,3 +39,13 @@ function Register(event) {
 
   //   return false;
 }
+
+// function showOutPt() {
+//   var check1 = document.getElementById("outchk").checked;
+//   // var text2 = document.getElementById("textbox");
+//   if (check1 === "true") {
+//     if (document.getElementsByClassName("childdata").value === "No")
+//       document.getElementsByClassName("childrow").style.display == "none";
+//     Event.preventDefault();
+//   }
+// }

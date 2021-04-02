@@ -1,7 +1,12 @@
+/** scripts for the hospital website assignment */
+
+/* whole body style */
 body {
   font-size: 1vw;
   font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* heading styles and alignment */
 .heading {
   color: white;
   background-color: rgb(250, 106, 39);
@@ -31,12 +36,8 @@ li {
   top: 2vw;
   left: 85%; */
 }
-h2 {
-  font-weight: normal;
-}
-#care {
-  font-style: italic;
-}
+
+/* heading hyperlinks homepage */
 a:active {
   color: rgb(155, 119, 0);
 }
@@ -49,6 +50,13 @@ a:visited {
 a {
   color: white;
   text-decoration: none;
+}
+/* homepage middle body */
+h2 {
+  font-weight: normal;
+}
+#care {
+  font-style: italic;
 }
 .midbody {
   margin-left: 10vw;
@@ -78,10 +86,14 @@ a {
   /* margin: 0; */
   overflow: auto;
 }
+
+/* homepage phone style */
 #phone {
   color: rgb(18, 100, 252);
   text-decoration: underline;
 }
+
+/* homepage email style */
 #email {
   color: rgb(250, 106, 39);
   text-decoration: none;
@@ -89,6 +101,8 @@ a {
 #email:hover {
   color: red;
 }
+
+/* bottom of pages */
 .grid-bottom {
   display: grid;
   grid-template-areas: "left right";
@@ -107,6 +121,8 @@ a {
   grid-area: right;
   padding-left: 80%;
 }
+
+/* form */
 #acc {
   width: 98.5%;
 }
@@ -115,6 +131,8 @@ a {
   grid-template-areas: "left center right";
   font-size: 0.8vw;
 }
+
+/* body contents of registration page */
 .leftside {
   grid-area: left;
   margin-right: 2vw;
@@ -145,6 +163,8 @@ label {
 /* #depart {
   padding-top: 0.5vw;
 } */
+
+/* radio buttons */
 #rbtn {
   margin-top: 0.8vw;
 }
@@ -152,6 +172,8 @@ label {
   margin-top: 0.8vw;
   font-size: 2vw;
 }
+
+/* department dropdown menu */
 select {
   height: 2.3vw;
   width: 100%;
@@ -163,6 +185,8 @@ select {
   font-size: 1.2vw;
   color: black;
 }
+
+/* buttons and styles */
 #reset,
 #reg {
   /* width: fit-content; */
@@ -211,12 +235,16 @@ select {
   width: 99%;
   padding-bottom: 0.2vw;
 }
+
+/* check boxes */
 .checks {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 #eld {
   margin-right: 1em;
 }
+
+/* table */
 table {
   width: 100%;
   /* text-align: left; */
@@ -232,13 +260,16 @@ td {
 }
 th {
   border-bottom: 0.1vw solid rgb(199, 199, 199);
+  background-color: rgb(211, 211, 211);
 }
 td {
   border-top: 0.1vw solid rgb(199, 199, 199);
 }
-tr:nth-child(even) {
+tr:nth-child(odd) {
   background-color: rgb(236, 236, 236);
 }
+
+/* footnotes of text fields */
 .footnotes {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 0;

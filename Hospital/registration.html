@@ -142,12 +142,18 @@
       <div class="checkboxes">
         <input type="checkbox" value="elderly" class="checks" id="elderchk" />
         <label for="elderly" id="eld">Show Elderly Patients only</label>
-        <input type="checkbox" value="outpatient" class="checks" id="outchk" />
+        <input
+          type="checkbox"
+          value="outpatient"
+          class="checks"
+          id="outchk"
+          onchecked="showOutPt()"
+        />
         <label for="outpatient">Show Out-Patients only</label>
       </div>
 
       <table id="patientList">
-        <tr>
+        <tr id="tablehead">
           <th>Patient ID No</th>
           <th>First Name</th>
           <th>Middle Initial(s)</th>
@@ -156,7 +162,7 @@
           <th>Department</th>
           <th>Out-patient?</th>
         </tr>
-        <tr border="1px solid black">
+        <tr border="1px solid black" class="childrow">
           <td>EP-000-000001</td>
           <td>Ana</td>
           <td>J</td>
@@ -165,7 +171,7 @@
           <td>Ear, Nose and Throat</td>
           <td>No</td>
         </tr>
-        <tr border="1px solid black">
+        <tr border="1px solid black" class="childrow">
           <td>EP-000-000002</td>
           <td>Bob</td>
           <td>K</td>
