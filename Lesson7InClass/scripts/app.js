@@ -70,4 +70,40 @@ console.log(h);
 // ternary operation
 const r = 1 < 2 ? 1 : 2;
 
+const bob = {
+  name: "Bob",
+  log: function () {
+    console.log(this);
+    console.log(this.name);
+  },
+};
+console.log(bob);
+bob.log();
+bob.age = 23;
+bob.log();
 
+// Encapsulation and namespace protection with closures
+
+// module pattern example
+// (function () {
+//   const objBob = {
+//     name: "Bob",
+//     log: function () {
+//       console.log(this);
+//       console.log(this.name);
+//     }
+//   }
+// })();
+
+(function () {
+  var count = 0;
+  function incr(n) {
+    count += n;
+  }
+  function reset() {
+    count = 0;
+  }
+  incr(4);
+  incr(2);
+  console.log("count: " + count);
+})();

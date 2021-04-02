@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holy Cross Medical Center</title>
+    <link href="index_files/style.css" type="text/css" rel="stylesheet" />
+    <script defer src="index_files/script.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="heading">
+      <div class="left">
+        <ul id="navlist">
+          <li>
+            Holy Cross Medical Center &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+          </li>
+          <li>
+            <a href="index.html" class="links">Home</a>
+            &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+          </li>
+          <li><a href="registration.html" class="links">Patients</a></li>
+        </ul>
+      </div>
+      <div class="right">Welcome, Guest</div>
+    </div>
+    <div class="midbody">
+      <h2>Patient Registration</h2>
+      <hr />
+      <br />
+      <form id="newAccount" action="#" method="GET" onsubmit="Register()">
+        <label>*Patient ID No:</label>
+        <br />
+        <input
+          type="text"
+          id="acc"
+          placeholder="EP-XXX-XXXXXX"
+          pattern="EP-\d{3}-\d{6}"
+          required
+        />
+        <p>Enter the Patient ID Number in the specified format</p>
+        <div class="form-name">
+          <div class="leftside">
+            <label for="fname">*First Name:</label>
+            <br />
+            <input
+              type="text"
+              id="fName"
+              class="fname"
+              placeholder="Enter First Name"
+              pattern="[A-Za-z\s]+"
+              required
+            />
+            <p>Enter the Patient's First Name</p>
+            <label for="dob">*Date of Birth:</label>
+            <br />
+            <input
+              type="text"
+              id="dateob"
+              class="dob"
+              placeholder="mm/dd/yyyy"
+              pattern="(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d"
+              required
+            />
+            <p>Enter the Patient's Date of Birth</p>
+          </div>
+          <div class="midside">
+            <label for="mname" class="mname"> Middle Initial(s):</label>
+            <br />
+            <input
+              type="text"
+              id="mName"
+              class="mname"
+              placeholder="Enter Middle Name"
+              pattern="[A-Za-z\s]+"
+            />
+            <p></p>
+            <br />
+            <br />
+            <label for="departments" id="depart">*Department</label><br />
+            <select id="departments" required>
+              <option value="">Select...</option>
+              <option value="Cardiology">Cardiology</option>
+              <option value="Ear, Nose and Throat">Ear, Nose and Throat</option>
+              <option value="Primary Care">Primary Care</option>
+              <option value="[Unassigned]">[Unassigned]</option>
+            </select>
+          </div>
+          <div class="rightside">
+            <label for="lname" class="lname">*Last Name:</label>
+            <br />
+            <input
+              type="text"
+              id="lName"
+              class="lname"
+              placeholder="Enter Last Name"
+              pattern="[A-Za-z\s]+"
+              required
+            />
+            <p>Enter the Patient's Last Name</p>
+
+            <label for="rbtn" class="outpt" id="rbtn">
+              *Is this an Out-patient?</label
+            >
+            <br />
+            <input
+              type="radio"
+              name="outpt"
+              class="rbtns"
+              value="Yes"
+              required
+            />
+            <label for="Yes">Yes</label>
+            <input
+              type="radio"
+              name="outpt"
+              id="rbt"
+              class="rbtns"
+              value="No"
+            />
+            <label for="No">No</label>
+            <p></p>
+            <br />
+            <div class="buttons">
+              <input type="reset" value="Reset" id="reset" />
+              <input type="submit" value="Register Patient" id="reg" />
+            </div>
+          </div>
+        </div>
+        <div class="checkboxes">
+          <input type="checkbox" value="elderly" class="checks" id="elderchk" />
+          <label for="elderly" id="eld">Show Elderly Patients only</label>
+          <input
+            type="checkbox"
+            value="outpatient"
+            class="checks"
+            id="outchk"
+          />
+          <label for="outpatient">Show Out-Patients only</label>
+        </div>
+        <br />
+        <br />
+        <table id="patientList">
+          <tr>
+            <th>Patient ID No</th>
+            <th>First Name</th>
+            <th>Middle Initial(s)</th>
+            <th>Last Name</th>
+            <th>Date of birth</th>
+            <th>Department</th>
+            <th>Out-patient?</th>
+          </tr>
+          <tr border="1px solid black">
+            <td>EP-000-000001</td>
+            <td>Ana</td>
+            <td>J</td>
+            <td>Smith</td>
+            <td>1955-05-05</td>
+            <td>Ear, Nose and Throat</td>
+            <td>No</td>
+          </tr>
+          <tr border="1px solid black">
+            <td>EP-000-000002</td>
+            <td>Bob</td>
+            <td>K</td>
+            <td>Jones</td>
+            <td>1955-05-04</td>
+            <td>Cardiology</td>
+            <td>Yes</td>
+          </tr>
+        </table>
+      </form>
+    </div>
+
+    <div class="reg-bottom">
+      <div class="leftbottom">
+        <p>O.Kalu:::CS472WAP</p>
+      </div>
+      <div class="rightbottom">
+        <p>HCMC &copy;May2020</p>
+      </div>
+    </div>
+  </body>
+</html>
