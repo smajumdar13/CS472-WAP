@@ -28,7 +28,7 @@
       <h2>Patient Registration</h2>
       <hr />
       <br />
-      <form id="newAccount" action="#" method="GET" onsubmit="Register()">
+      <form id="newAccount" action="#" method="GET" onsubmit="Register(event)">
         <label>*Patient ID No:</label>
         <br />
         <input
@@ -81,8 +81,8 @@
             <p></p>
             <br />
             <br />
-            <label for="departments" id="depart">*Department</label><br />
-            <select id="departments" required>
+            <label for="typee" id="depart">*Department</label><br />
+            <select id="typee" required>
               <option value="">Select...</option>
               <option value="Cardiology">Cardiology</option>
               <option value="Ear, Nose and Throat">Ear, Nose and Throat</option>
@@ -104,28 +104,29 @@
             />
             <p class="footnotes">Enter the Patient's Last Name</p>
             <br />
-            <label for="rbtn" class="outpt" id="rbtn">
-              *Is this an Out-patient?</label
-            >
+            <label for="rbtn"> *Is this an Out-patient?</label>
             <br />
             <br />
             <input
               type="radio"
               name="outpt"
               class="rbtns"
+              id="rbt1"
               value="Yes"
+              checked
               required
             />
             <label for="Yes">Yes</label>
             <input
               type="radio"
               name="outpt"
-              id="rbt"
+              id="rbt2"
               class="rbtns"
               value="No"
+              required
             />
             <label for="No">No</label>
-            <p></p>
+
             <br />
             <br />
             <div class="buttons">
@@ -134,49 +135,46 @@
             </div>
           </div>
         </div>
-        <div class="checkboxes">
-          <input type="checkbox" value="elderly" class="checks" id="elderchk" />
-          <label for="elderly" id="eld">Show Elderly Patients only</label>
-          <input
-            type="checkbox"
-            value="outpatient"
-            class="checks"
-            id="outchk"
-          />
-          <label for="outpatient">Show Out-Patients only</label>
-        </div>
         <br />
         <br />
-        <table id="patientList">
-          <tr>
-            <th>Patient ID No</th>
-            <th>First Name</th>
-            <th>Middle Initial(s)</th>
-            <th>Last Name</th>
-            <th>Date of birth</th>
-            <th>Department</th>
-            <th>Out-patient?</th>
-          </tr>
-          <tr border="1px solid black">
-            <td>EP-000-000001</td>
-            <td>Ana</td>
-            <td>J</td>
-            <td>Smith</td>
-            <td>1955-05-05</td>
-            <td>Ear, Nose and Throat</td>
-            <td>No</td>
-          </tr>
-          <tr border="1px solid black">
-            <td>EP-000-000002</td>
-            <td>Bob</td>
-            <td>K</td>
-            <td>Jones</td>
-            <td>1955-05-04</td>
-            <td>Cardiology</td>
-            <td>Yes</td>
-          </tr>
-        </table>
       </form>
+      <br />
+      <div class="checkboxes">
+        <input type="checkbox" value="elderly" class="checks" id="elderchk" />
+        <label for="elderly" id="eld">Show Elderly Patients only</label>
+        <input type="checkbox" value="outpatient" class="checks" id="outchk" />
+        <label for="outpatient">Show Out-Patients only</label>
+      </div>
+
+      <table id="patientList">
+        <tr>
+          <th>Patient ID No</th>
+          <th>First Name</th>
+          <th>Middle Initial(s)</th>
+          <th>Last Name</th>
+          <th>Date of birth</th>
+          <th>Department</th>
+          <th>Out-patient?</th>
+        </tr>
+        <tr border="1px solid black">
+          <td>EP-000-000001</td>
+          <td>Ana</td>
+          <td>J</td>
+          <td>Smith</td>
+          <td>1955-05-05</td>
+          <td>Ear, Nose and Throat</td>
+          <td>No</td>
+        </tr>
+        <tr border="1px solid black">
+          <td>EP-000-000002</td>
+          <td>Bob</td>
+          <td>K</td>
+          <td>Jones</td>
+          <td>1955-05-04</td>
+          <td>Cardiology</td>
+          <td>Yes</td>
+        </tr>
+      </table>
     </div>
 
     <div class="reg-bottom">

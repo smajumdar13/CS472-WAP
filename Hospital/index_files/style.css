@@ -200,7 +200,8 @@ select {
 .reg-bottom {
   position: absolute;
   /* margin-top: 20vw; */
-  bottom: 0.2vw;
+  bottom: 0.2vw fixed;
+
   display: grid;
   grid-template-areas: "left right";
   height: 2vw;
@@ -221,6 +222,8 @@ table {
   /* text-align: left; */
   border-collapse: collapse;
   margin-top: 2vw;
+  overflow: auto;
+  margin-bottom: 2vw;
 }
 th,
 td {
