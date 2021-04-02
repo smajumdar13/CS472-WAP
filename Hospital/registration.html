@@ -38,7 +38,10 @@
           pattern="EP-\d{3}-\d{6}"
           required
         />
-        <p>Enter the Patient ID Number in the specified format</p>
+        <p class="footnotes">
+          Enter the Patient ID Number in the specified format
+        </p>
+        <br />
         <div class="form-name">
           <div class="leftside">
             <label for="fname">*First Name:</label>
@@ -51,7 +54,8 @@
               pattern="[A-Za-z\s]+"
               required
             />
-            <p>Enter the Patient's First Name</p>
+            <p class="footnotes">Enter the Patient's First Name</p>
+            <br />
             <label for="dob">*Date of Birth:</label>
             <br />
             <input
@@ -62,7 +66,7 @@
               pattern="(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d"
               required
             />
-            <p>Enter the Patient's Date of Birth</p>
+            <p class="footnotes">Enter the Patient's Date of Birth</p>
           </div>
           <div class="midside">
             <label for="mname" class="mname"> Middle Initial(s):</label>
@@ -85,6 +89,7 @@
               <option value="Primary Care">Primary Care</option>
               <option value="[Unassigned]">[Unassigned]</option>
             </select>
+            <p class="footnotes">Select the Department providing care</p>
           </div>
           <div class="rightside">
             <label for="lname" class="lname">*Last Name:</label>
@@ -97,11 +102,12 @@
               pattern="[A-Za-z\s]+"
               required
             />
-            <p>Enter the Patient's Last Name</p>
-
+            <p class="footnotes">Enter the Patient's Last Name</p>
+            <br />
             <label for="rbtn" class="outpt" id="rbtn">
               *Is this an Out-patient?</label
             >
+            <br />
             <br />
             <input
               type="radio"
@@ -120,6 +126,7 @@
             />
             <label for="No">No</label>
             <p></p>
+            <br />
             <br />
             <div class="buttons">
               <input type="reset" value="Reset" id="reset" />

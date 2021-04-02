@@ -51,8 +51,8 @@ a {
   text-decoration: none;
 }
 .midbody {
-  padding-left: 10vw;
-  padding-right: 10vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 #img {
   width: 100%;
@@ -142,9 +142,9 @@ input[list="dept"] {
 label {
   font-size: 1.2vw;
 }
-#depart {
+/* #depart {
   padding-top: 0.5vw;
-}
+} */
 #rbtn {
   margin-top: 0.8vw;
 }
@@ -192,7 +192,10 @@ select {
   background-color: rgb(207, 69, 5);
 }
 .buttons {
-  padding-left: 20%;
+  /* padding-left: 12%; */
+  position: absolute;
+  right: 0;
+  margin-right: 10vw;
 }
 .reg-bottom {
   position: absolute;
@@ -217,6 +220,7 @@ table {
   width: 100%;
   /* text-align: left; */
   border-collapse: collapse;
+  margin-top: 2vw;
 }
 th,
 td {
@@ -231,4 +235,10 @@ td {
 }
 tr:nth-child(even) {
   background-color: rgb(236, 236, 236);
+}
+.footnotes {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 0;
+  /* font-style: italic; */
+  font-size: 0.7vw;
 }
