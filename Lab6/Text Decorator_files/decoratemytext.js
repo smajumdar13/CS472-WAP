@@ -14,8 +14,13 @@ function callAlert() {
   document.getElementById("textbox").style.fontSize = font + "px";
 }
 
-function resizer() {
-  setInterval("callAlert()", 500);
+function resizer(d) {
+  if (d.interval) {
+    clearInterval(d.interval);
+  } else {
+    d.interval = setInterval("callAlert();", 500);
+  }
+  // var intervalID = setInterval("callAlert()", 500);
 }
 
 function callAlert1() {
@@ -155,7 +160,6 @@ function malko() {
   malArray = str1.split(" ");
   for (let i = 0; i < malArray.length; i++) {
     if (malArray[i].length >= 5) malArray[i] = "Malkovich";
-    else malArray[i] = malArray[i];
   }
   str1 = malArray.join(" ");
   document.getElementById("firstHead").innerHTML = str1;
@@ -164,7 +168,6 @@ function malko() {
   malArray = str2.split(" ");
   for (let i = 0; i < malArray.length; i++) {
     if (malArray[i].length >= 5) malArray[i] = "Malkovich";
-    else malArray[i] = malArray[i];
   }
   str2 = malArray.join(" ");
   document.getElementById("textbox").value = str2;
@@ -173,7 +176,6 @@ function malko() {
   malArray = str3.split(" ");
   for (let i = 0; i < malArray.length; i++) {
     if (malArray[i].length >= 5) malArray[i] = "Malkovich";
-    else malArray[i] = malArray[i];
   }
   str3 = malArray.join(" ");
   document.getElementById("legend1").value = str3;
@@ -182,7 +184,6 @@ function malko() {
   malArray = str4.split(" ");
   for (let i = 0; i < malArray.length; i++) {
     if (malArray[i].length >= 5) malArray[i] = "Malkovich";
-    else malArray[i] = malArray[i];
   }
   str4 = malArray.join(" ");
   document.getElementById("legend2").value = str4;
@@ -191,7 +192,6 @@ function malko() {
   malArray = str5.split(" ");
   for (let i = 0; i < malArray.length; i++) {
     if (malArray[i].length >= 5) malArray[i] = "Malkovich";
-    else malArray[i] = malArray[i];
   }
   str5 = malArray.join(" ");
   document.getElementById("btn").value = str5;
@@ -200,7 +200,6 @@ function malko() {
   malArray = str6.split(" ");
   for (let i = 0; i < malArray.length; i++) {
     if (malArray[i].length >= 5) malArray[i] = "Malkovich";
-    else malArray[i] = malArray[i];
   }
   str6 = malArray.join(" ");
   document.getElementById("bling").innerHTML = str6;
@@ -209,7 +208,6 @@ function malko() {
   malArray = str7.split(" ");
   for (let i = 0; i < malArray.length; i++) {
     if (malArray[i].length >= 5) malArray[i] = "Malkovich";
-    else malArray[i] = malArray[i];
   }
   str7 = malArray.join(" ");
   document.getElementById("btn1").value = str7;

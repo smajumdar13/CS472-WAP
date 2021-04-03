@@ -1,0 +1,37 @@
+Best Practices
+ variables defined with var are hoisted and have value
+undefined until it is assigned a value in code
+ Do not use var assignments in new code
+ When using let or const, there will be no hoisting and we
+will receive a reference error if used before they are
+declared
+ Best practice is to use const or let and explicitly declare them
+before using
+ Makes code more obvious for humans to understand
+ Use const by default
+ Only use let if you need to update variable later
+ Don’t use var
+ But, millions of legacy programs use var and any competent JS
+programmer must understand hoisting
+
+var scope – nearest function scope
+ let scope – nearest enclosing block
+
+JavaScript has global scope and local scope within functions
+when variables are declared with var, and now has block
+scope with const and let
+
+JavaScript has a 2-pass compiler that hoists all function and
+variable declarations. These declarations are visible
+anywhere in the current function scope regardless of
+where they are declared. Variables have value 'undefined'
+until the execution pass and an assignment is made
+
+In first phase, JS engine looks through all global code for
+functions and variables (hoisting)
+In second phase, JS engine will execute your code line-by-line
+and call functions and create execution context for every
+function(scope) in the execution stack.
+
+Function expressions are not hoisted
+

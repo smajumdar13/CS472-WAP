@@ -20,6 +20,8 @@ function Register(event) {
   var cell5 = row1.insertCell(4);
   var cell6 = row1.insertCell(5);
   var cell7 = row1.insertCell(6);
+  var cell8 = row1.insertCell(7);
+  var cell9 = row1.insertCell(8);
   cell7.className = "childdata";
 
   var outp = "";
@@ -36,16 +38,24 @@ function Register(event) {
   cell5.innerHTML = dateOfB;
   cell6.innerHTML = deptN;
   cell7.innerHTML = outp;
+  cell8.innerHTML = "<a href='#'>Edit</a>";
+  cell9.innerHTML = "<a href='#'>Delete</a>";
 
-  //   return false;
+  document.getElementById("acc").value = "";
+  document.getElementById("fName").value = "";
+  document.getElementById("mName").value = "";
+  document.getElementById("lName").value = "";
+  document.getElementById("dateob").value = "";
+  document.getElementById("typee").value = "";
+  document.getElementById("rbt1").checked = false;
+  document.getElementById("rbt2").checked = false;
+  document.createElement();
 }
 
-// function showOutPt() {
-//   var check1 = document.getElementById("outchk").checked;
-//   // var text2 = document.getElementById("textbox");
-//   if (check1 === "true") {
-//     if (document.getElementsByClassName("childdata").value === "No")
-//       document.getElementsByClassName("childrow").style.display == "none";
-//     Event.preventDefault();
-//   }
+// function deleteRow(text) {
+//   document.getElementsByTagName("tr")[2].remove();
+// // }
+// function deleteRow(r) {
+//   var i = r.parentNode.parentNode.rowIndex;
+//   document.getElementById("patientList").deleteRow(i);
 // }
