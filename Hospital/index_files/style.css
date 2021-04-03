@@ -58,10 +58,12 @@ h1 {
 }
 h2 {
   font-weight: bold;
-  font-size: 1.2vw;
+  font-size: 1.4vw;
   margin-bottom: 0;
 }
 #care {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-style: italic;
   margin-top: 0;
 }
@@ -119,8 +121,9 @@ h2 {
   background-color: rgb(197, 197, 197);
   font-size: 0.8vw;
   width: 99%;
-  /* position: absolute; */
-  bottom: 0vw fixed;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 .leftbottom {
   grid-area: left;
@@ -167,6 +170,7 @@ input[list="dept"] {
 }
 label {
   font-size: 1.1vw;
+  margin-bottom: 0.6vw;
 }
 /* #depart {
   padding-top: 0.5vw;
@@ -190,7 +194,7 @@ select {
   border-radius: 0.4vw;
   /* border-width: 0.15vw; */
   padding-left: 1vw;
-  font-size: 1.2vw;
+  font-size: 1vw;
   color: black;
 }
 
@@ -266,8 +270,9 @@ tr:nth-child(odd) {
 
 /* footnotes of text fields */
 .footnotes {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-top: 0;
+  font-family: arial narrow;
   /* font-style: italic; */
-  font-size: 0.7vw;
+  margin-top: 0.2vw;
+  /* font-style: italic; */
+  font-size: 0.8vw;
 }
