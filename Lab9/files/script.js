@@ -16,14 +16,14 @@ let person = {
     this.name = newName;
   },
   printDetails: function () {
-    console.log(`The person's name is ${this.name} \n
-      ${this.name} was born on ${this.dateOfBirth}`);
+    console.log(`The person's name is ${this.name} \n`);
+    console.log(`${this.name} was born on ${this.dateOfBirth}`);
   },
 };
 
 const person1 = Object.create(person);
 person1.name = "John";
-person1.dateOfBirth = "1998-12-10";
+person1.dateOfBirth = new Date(1998, 12 - 1, 10).toISOString().slice(0, 10);
 person1.printDetails();
 
 // Q2. Employee IS_A person inheritance applied, created generic object employee
