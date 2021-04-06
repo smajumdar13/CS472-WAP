@@ -45,26 +45,37 @@ employee1.hireDate = new Date().toISOString().slice(0, 10);
 employee1.doJob("Programmer");
 
 // Q3 created object Person using function constructors, and two instances of the object
-function Person() {
-  this.name = "";
-  this.dateOfBirth = "";
+function Person(name, dateOfBirth) {
+  this.name = name;
+  this.dateOfBirth = dateOfBirth;
+  this.toString = function () {
+    console.log(
+      "{Name: " + this.name + ", DateOfBirth: " + this.dateOfBirth + "}"
+    );
+  };
 }
 
-Person.prototype.toString = function () {
-  console.log(
-    "{Name: " + this.name + ", DateOfBirth: " + this.dateOfBirth + "}"
-  );
-};
+// // Alternative to above
+// Person.prototype.toString = function () {
+//   console.log(
+//     "{Name: " + this.name + ", DateOfBirth: " + this.dateOfBirth + "}"
+//   );
+// };
 
-const person2 = new Person();
-person2.name = "John";
-// -1 because month count starts from 0(zero), so without -1, it'll return 1999-01-10
-person2.dateOfBirth = new Date(1998, 12 - 1, 10).toISOString().slice(0, 10);
+const person2 = new Person(
+  "John",
+  new Date(1998, 12 - 1, 10).toISOString().slice(0, 10) // -1 because month count starts from 0(zero), so without -1, it'll return 1999-01-10
+);
+
+// person2.name = "John";
+// // -1 because month count starts from 0(zero), so without -1, it'll return 1999-01-10
+// person2.dateOfBirth = new Date(1998, 12 - 1, 10).toISOString().slice(0, 10);
 
 person2.toString();
 
-const person3 = new Person();
-person3.name = "Peter";
-person3.dateOfBirth = new Date(1985, 11 - 1, 10).toISOString().slice(0, 10);
+const person3 = new Person(
+  "Peter",
+  new Date(1985, 11 - 1, 10).toISOString().slice(0, 10)
+);
 
 person3.toString();
