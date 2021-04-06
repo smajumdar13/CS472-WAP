@@ -41,7 +41,8 @@ const employee1 = Object.create(employee);
 employee1.name = "Anna";
 employee1.salary = "$249995.50";
 employee1.hireDate = new Date().toISOString().slice(0, 10);
-
+// // alternate date
+// employee1.hireDate = new Date(Date.UTC(1998, 11, 10));
 employee1.doJob("Programmer");
 
 // Q3 created object Person using function constructors, and two instances of the object
@@ -49,9 +50,14 @@ function Person(name, dateOfBirth) {
   this.name = name;
   this.dateOfBirth = dateOfBirth;
   this.toString = function () {
-    console.log(
-      "{Name: " + this.name + ", DateOfBirth: " + this.dateOfBirth + "}"
-    );
+    console.log(`{Name: ${this.name}, DateOfBirth: ${this.dateOfBirth}}`);
+    // // alternate date
+    // console.log(
+    //   `{Name: ${this.name}, DateOfBirth: ${Intl.DateTimeFormat("en-US").format(
+    //     this.dateOfBirth
+    //   )}}`
+    // );
+    // console.log(Intl.DateTimeFormat("en-US").format(dateOfBirth));
   };
 }
 
@@ -64,7 +70,11 @@ function Person(name, dateOfBirth) {
 
 const person2 = new Person(
   "John",
-  new Date(1998, 12 - 1, 10).toISOString().slice(0, 10) // -1 because month count starts from 0(zero), so without -1, it'll return 1999-01-10
+  // // alternate date
+  // new Date(Date.UTC(1998, 11, 10))
+  new Date(1998, 12 - 1, 10).toISOString().slice(0, 10)
+  // -1 because month index starts from 0(zero), so Jan=0, Feb=1... Dec=11
+  // month is input as regular month minus(-) 1.
 );
 
 // person2.name = "John";
@@ -76,6 +86,8 @@ person2.toString();
 const person3 = new Person(
   "Peter",
   new Date(1985, 11 - 1, 10).toISOString().slice(0, 10)
+  // // alternate date
+  // new Date(Date.UTC(1985, 10, 10))
 );
 
 person3.toString();
