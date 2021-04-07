@@ -42,3 +42,19 @@ for (let prop in rabbit) {
 }
 
 //
+
+//classes
+class User {
+  constructor(name) {
+    this.name = name;
+  }
+  // get name() {
+  //   return this._name;
+  // }
+  sayHi() {
+    alert(this.name);
+  }
+}
+
+let user = new User("John");
+user.sayHi();
