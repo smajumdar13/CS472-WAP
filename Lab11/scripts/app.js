@@ -19,16 +19,41 @@ $(document).ready(function () {
       .not(":first")
       .each(function () {
         var tr1 = $(this);
-        if (tr1.find("td:eq(2)").text() !== "Savings")
-          tr1.addClass("notSavings");
+        if (tr1.find("td:eq(2)").text() == "Savings")
+          tr1.addClass("accSavings");
+        if (tr1.find("td:eq(2)").text() == "Checking")
+          tr1.addClass("accChecking");
+        if (tr1.find("td:eq(2)").text() == "Loan") tr1.addClass("accLoan");
       });
   });
 
-  $("#isChecked").change(function () {
+  $("#isSavings").change(function () {
     if (this.checked) {
-      $(".notSavings").hide();
+      $(".accChecking").hide();
+      $(".accLoan").hide();
     } else {
-      $(".notSavings").show();
+      $(".accChecking").show();
+      $(".accLoan").show();
+    }
+  });
+
+  $("#isChecking").change(function () {
+    if (this.checked) {
+      $(".accSavings").hide();
+      $(".accLoan").hide();
+    } else {
+      $(".accSavings").show();
+      $(".accLoan").show();
+    }
+  });
+
+  $("#isLoan").change(function () {
+    if (this.checked) {
+      $(".accSavings").hide();
+      $(".accChecking").hide();
+    } else {
+      $(".accSavings").show();
+      $(".accChecking").show();
     }
   });
 });
