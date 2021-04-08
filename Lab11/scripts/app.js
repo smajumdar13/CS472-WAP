@@ -71,14 +71,16 @@ $(document).ready(function () {
     if (this.checked) {
       $("tr").not(":first").not(".accChecking").hide();
     } else {
-      $(".accSavings, .accLoan").show();
+      // $(".accSavings, .accLoan").show();
+      $("tr").show();
     }
   });
   $("#isLoan").change(function () {
     if (this.checked) {
       $("tr").not(":first").not(".accLoan").hide();
     } else {
-      $(".accSavings, .accChecking").show();
+      // $(".accSavings, .accChecking").show();
+      $("tr").show();
     }
   });
 

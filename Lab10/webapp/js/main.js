@@ -1,8 +1,8 @@
 /** script for main.js */
 "use strict";
 
-import { person } from "./sub/person.js";
-import { employee } from "./sub/employee.js";
+import { person } from "./model/person.js";
+import { employee } from "./model/employee.js";
 
 const arrayOfPersons = [
   new person(
