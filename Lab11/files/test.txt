@@ -1,0 +1,38 @@
+  // $("tr")
+  //   // .not("thead tr")
+  //   .each(function () {
+  //     var tr = $(this);
+  //     if (tr.find("td:eq(2)").text() !== "Savings") tr.addClass("hidden");
+  //   });
+
+  // if ($("#isChecked").is(":checked") == true) {
+  //   //   $("#tbody td")
+  //   //     .filter(function () {
+  //   //       return $(this).text == "Savings";
+  //   //     })
+  //   //     .hide();
+  //   $(".hidden").hide();
+  // } else {
+  //   $(".hidden").show();
+  // }
+
+  // $("#isChecked").change(function () {
+  //   if ($(this).is(":checked")) {
+  //     $(".hidden").hide();
+  //   } else {
+  //     $(".hidden").show();
+  //   }
+  // });
+
+
+    // $("#isChecked").change(function () {
+  //   if ($(this).is(":checked")) {
+  //     $(".hidden").hide();
+  //   } else {
+  //     $(".hidden").show();
+  //   }
+  // });
+
+  // if ($("#isChecked").is(":checked")) {
+  //   $(".hidden").hide();
+  // }

@@ -3,8 +3,8 @@
 {
   ("use strict");
   function getPreview() {
-    const name = document.getElementById("name").value;
-    const price = document.getElementById("unitPrice").value;
+    // const name = document.getElementById("name").value;
+    // const price = document.getElementById("unitPrice").value;
     document.write(
       "Product Number: " +
         document.getElementById("product").value +
