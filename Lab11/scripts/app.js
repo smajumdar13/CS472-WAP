@@ -27,33 +27,60 @@ $(document).ready(function () {
       });
   });
 
+  // // first way that i worked out
+  // $("#isSavings").change(function () {
+  //   if (this.checked) {
+  //     $(".accChecking").hide();
+  //     $(".accLoan").hide();
+  //   } else {
+  //     $(".accChecking").show();
+  //     $(".accLoan").show();
+  //   }
+  // });
+
+  // $("#isChecking").change(function () {
+  //   if (this.checked) {
+  //     $(".accSavings").hide();
+  //     $(".accLoan").hide();
+  //   } else {
+  //     $(".accSavings").show();
+  //     $(".accLoan").show();
+  //   }
+  // });
+
+  // $("#isLoan").change(function () {
+  //   if (this.checked) {
+  //     $(".accSavings").hide();
+  //     $(".accChecking").hide();
+  //   } else {
+  //     $(".accSavings").show();
+  //     $(".accChecking").show();
+  //   }
+  // });
+
+  // second way, but still not working
   $("#isSavings").change(function () {
     if (this.checked) {
-      $(".accChecking").hide();
-      $(".accLoan").hide();
+      $("tr").not(":first").not(".accSavings").hide();
     } else {
-      $(".accChecking").show();
-      $(".accLoan").show();
+      $("tr").show();
+      // $(".accChecking, .accLoan").show();
     }
   });
-
   $("#isChecking").change(function () {
     if (this.checked) {
-      $(".accSavings").hide();
-      $(".accLoan").hide();
+      $("tr").not(":first").not(".accChecking").hide();
     } else {
-      $(".accSavings").show();
-      $(".accLoan").show();
+      $(".accSavings, .accLoan").show();
+    }
+  });
+  $("#isLoan").change(function () {
+    if (this.checked) {
+      $("tr").not(":first").not(".accLoan").hide();
+    } else {
+      $(".accSavings, .accChecking").show();
     }
   });
 
-  $("#isLoan").change(function () {
-    if (this.checked) {
-      $(".accSavings").hide();
-      $(".accChecking").hide();
-    } else {
-      $(".accSavings").show();
-      $(".accChecking").show();
-    }
-  });
+  // $(':checkbox').on('click',function () {})
 });
